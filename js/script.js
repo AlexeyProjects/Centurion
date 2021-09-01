@@ -89,10 +89,12 @@ $(document).ready(function(){
         margin: 100,
         responsive: {
           320: {
-            items: 2
+            items: 2,
+            margin: 250
           },
           768: {
-            items: 2
+            items: 2,
+            margin: 250
           },
           1280: {
             items: 4

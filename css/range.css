@@ -19,7 +19,7 @@
 }
 
 .calculation-body {
-  width: 74rem;
+  width: 73rem;
   background-color: #fff;
   padding: 3.2rem;
   -webkit-box-shadow: 0px 4px 30px rgba(120, 141, 166, 0.1);
@@ -31,7 +31,7 @@
 .calculation-body-title {
   font-weight: 700;
   font-size: 3rem;
-  max-width: 35rem;
+  max-width: 42rem;
   margin-bottom: 3rem;
 }
 .calculation-body-title span {
@@ -146,7 +146,7 @@
 }
 
 .calculation-info {
-  width: 52rem;
+  width: 51rem;
   background-color: #fff;
   padding: 3.2rem;
   -webkit-box-shadow: 0px 4px 30px rgba(120, 141, 166, 0.1);

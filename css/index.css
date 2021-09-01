@@ -102,7 +102,7 @@ span.underline.black {
   margin-right: 4.8rem;
 }
 .header-address {
-  width: 57.3rem;
+  width: 54.3rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -128,9 +128,7 @@ span.underline.black {
 }
 .header-panel__rigthbtn {
   margin-left: 3rem;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  padding: 1rem;
+  display: none;
 }
 
 .nav {
@@ -144,7 +142,7 @@ span.underline.black {
 }
 .nav-list__item {
   color: #0227AB;
-  font-weight: 600;
+  font-weight: 500;
 }
 .nav-list__close {
   display: none;
@@ -160,9 +158,9 @@ span.underline.black {
   background-repeat: no-repeat;
   background-position: 73%;
   overflow: hidden;
+  position: relative;
 }
 .main .container {
-  position: relative;
   padding-top: 11.6rem;
 }
 .main-content__text {
@@ -199,7 +197,7 @@ span.underline.black {
 .main__image {
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
   width: 57%;
 }
 .main__image.w1200 {
@@ -247,7 +245,7 @@ span.underline.black {
   font-weight: 600;
 }
 
-.banner {
+.bannerTemp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,7 +259,7 @@ span.underline.black {
   background-image: url("../static/images/backbanner.png");
   background-size: contain;
 }
-.banner-body {
+.bannerTemp-body {
   background-image: url("../static/images/banner.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -270,16 +268,16 @@ span.underline.black {
   padding: 5.6rem 7.2rem;
   color: #FFFFFF;
 }
-.banner-body__title, .banner-body-bottom {
+.bannerTemp-body__title, .bannerTemp-body-bottom {
   max-width: 66rem;
 }
-.banner-body__title {
+.bannerTemp-body__title {
   margin-bottom: 3.8rem;
 }
-.banner-body__title span {
+.bannerTemp-body__title span {
   color: #FFE455;
 }
-.banner-body-bottom__text {
+.bannerTemp-body-bottom__text {
   font-size: 1.8rem;
   margin-right: 2.5rem;
 }
@@ -445,7 +443,8 @@ span.underline.black {
   width: 5rem;
 }
 .ivan-content-list__item__text {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .expenses {
@@ -698,8 +697,8 @@ span.underline.black {
           justify-content: space-between;
 }
 .faq-videos__item {
-  width: 52rem;
-  height: 30rem;
+  width: 61rem;
+  height: 34rem;
 }
 
 .harry {
@@ -746,7 +745,7 @@ span.underline.black {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.receptconsult-banner {
+.receptconsult-bannerTemp {
   width: 107rem;
   height: 43.2rem;
   background-image: url("../static/images/reception/receptionback.png");
@@ -755,19 +754,19 @@ span.underline.black {
   padding: 6.4rem 7.2rem;
   color: #ffffff;
 }
-.receptconsult-banner__title {
+.receptconsult-bannerTemp__title {
   margin-bottom: 2.4rem;
 }
-.receptconsult-banner__text {
+.receptconsult-bannerTemp__text {
   margin-bottom: 3.2rem;
 }
-.receptconsult-banner-form-inputs {
+.receptconsult-bannerTemp-form-inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 3.4rem;
 }
-.receptconsult-banner-form-inputs__item {
+.receptconsult-bannerTemp-form-inputs__item {
   padding: 1.2rem 1.6rem;
   outline: none;
   border: none;
@@ -776,7 +775,7 @@ span.underline.black {
   border-radius: 4px;
   margin-right: 2rem;
 }
-.receptconsult-banner-form-panel {
+.receptconsult-bannerTemp-form-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -784,17 +783,17 @@ span.underline.black {
       -ms-flex-align: center;
           align-items: center;
 }
-.receptconsult-banner-form-panel__btn {
+.receptconsult-bannerTemp-form-panel__btn {
   background-color: #FFE455;
   border-color: #FFE455;
   color: #000;
   font-weight: 600;
   margin-right: 1.6rem;
 }
-.receptconsult-banner-form-panel__conf {
+.receptconsult-bannerTemp-form-panel__conf {
   max-width: 42rem;
 }
-.receptconsult-banner-form-panel__conf a {
+.receptconsult-bannerTemp-form-panel__conf a {
   color: #77BEFF;
 }
 
@@ -820,7 +819,7 @@ span.underline.black {
           justify-content: space-between;
 }
 .office-list__item {
-  width: 61rem;
+  width: 62.5rem;
   height: 37.6rem;
   margin-bottom: 3.2rem;
   border-radius: 4px;
@@ -894,7 +893,7 @@ span.underline.black {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
