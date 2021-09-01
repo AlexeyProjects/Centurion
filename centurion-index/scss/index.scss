@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 
 $blue: #0227AB;
+$yellow: #FFE455;
 
 html {
 	font-size: 0.5235vw;
@@ -16,6 +17,13 @@ body {
 	font-size: 1.6rem;
 	font-family: 'Inter', sans-serif;
 	color: #000;	
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+input {
+	font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -82,6 +90,9 @@ span {
 		justify-content: space-between;
 		
 	}
+	&__logo {
+		margin-right: 4.8rem;
+	}
 	&-address {
 		width: 57.3rem;
 		justify-content: space-between;
@@ -102,6 +113,11 @@ span {
 			font-weight: 600;
 			border-color: $blue;
 		}
+		&__rigthbtn {
+			margin-left: 3rem;
+		    box-sizing: content-box;
+		    padding: 1rem;
+		}
 	}
 }
 
@@ -113,6 +129,12 @@ span {
 		&__item {
 			color: $blue;
 			font-weight: 600;
+		}
+		&__close {
+			display: none;
+			position: absolute;
+			right: 2rem;
+			top: 2rem;
 		}
 	}
 }
@@ -168,6 +190,9 @@ span {
 		right: 0;
 		top: 0;
 		width: 57%;
+		&.w1200 {
+			display: none;
+		}
 	}
 }
 
@@ -214,6 +239,8 @@ span {
 	justify-content: center;
 	width: 100%;
 	height: 36.4rem;
+	background-repeat: no-repeat;
+	background-position: center;
 	background-image: url('../static/images/backbanner.png');
 	background-size: contain;
 	&-body {
@@ -225,7 +252,7 @@ span {
 		padding: 5.6rem 7.2rem;
 		color: #FFFFFF;
 		&__title, &-bottom {
-			max-width: 60.8rem;
+			max-width: 66rem;
 		}
 		&__title {
 			margin-bottom: 3.8rem;
@@ -295,6 +322,7 @@ span {
 			height: 7rem;
 			right: -4rem;
 			bottom: 0;
+			background-size: contain;
 			background-image: url('../static/icons/possibility/arrow.png');
 		}
 		span {
@@ -345,7 +373,7 @@ span {
 		align-items: center;
 		justify-content: center;
 		&__item {
-			width: 63rem;
+			width: 100%;
 		}
 	}
 }
@@ -460,10 +488,20 @@ span {
 	}
 	&-list {
 		margin-bottom: 7.2rem;
+		flex-wrap: wrap;
 		&__item {
-			width: 30rem;
+			width: 29rem;
 			height: 44rem;
+			margin-right: 3rem;
+			margin-bottom: 3rem;
 			position: relative;
+			overflow: hidden;
+			&:hover {
+				cursor: pointer;
+			}
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
 			&__play {
 				position: absolute;
 				top: 1.6rem;
@@ -474,7 +512,7 @@ span {
 			}
 			&-descrp {
 				position: absolute;
-				bottom: 1.6rem;
+				bottom: 3.6rem;
 				left: 1.6rem;
 				> div {
 					background-color: #ffffff;
@@ -516,6 +554,7 @@ span {
 	}
 
 	&-list {
+		position: relative;
 		margin-bottom: 2.4rem;
 
 		&__item {
@@ -556,6 +595,34 @@ span {
 				}
 			}
 		}
+		.owl-nav {
+			top: 28%;
+		    left: -3rem;
+		    display: flex;
+		    justify-content: space-between;
+		    position: absolute;
+		    width: 103.5%;
+		    pointer-events: none;
+		}
+		.owl-prev, .owl-next {
+			font-size: 0;
+			width: 6.4rem;
+			height: 6.4rem;
+			border: none;
+			outline: none;
+			background-size: contain;
+			background-color: transparent;
+			pointer-events: auto;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.owl-prev {
+			background-image: url('../static/icons/collective/owlprev.svg');
+		}
+		.owl-next {
+			background-image: url('../static/icons/collective/owlnext.svg');
+		}
 	}
 	&-cases {
 		&__title {
@@ -567,8 +634,13 @@ span {
 			flex-wrap: wrap;
 			margin-bottom: 4.8rem;
 			&__item {
+				width: 19rem;
+				height: 26rem;
 				margin-right: 2.5rem;
 				margin-bottom: 2rem;
+				img {
+					width: 100%;
+				}
 				&:last-child {
 					margin-right: 0;
 				}
@@ -637,6 +709,204 @@ span {
 		&__subtitle {
 			font-weight: 600;
 			margin-bottom: 3.6rem;
+		}
+	}
+}
+.receptconsult {
+	
+    width: 100%;
+    height: 44rem;
+    background-image: url(../static/images/backbanner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+	.container {
+		display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	}
+	&-banner {
+		width: 107rem;
+		height: 43.2rem;
+		background-image: url('../static/images/reception/receptionback.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		padding: 6.4rem 7.2rem;
+		color: #ffffff;
+		&__title {
+			margin-bottom: 2.4rem;
+		}
+		&__text {
+			margin-bottom: 3.2rem;
+		}
+		&-form {
+			&-inputs {
+				display: flex;
+				margin-bottom: 3.4rem;
+				&__item {
+					padding: 1.2rem 1.6rem;
+					outline: none;
+					border:none;
+					box-shadow: inset 0px -2px 0px #9AA9DD;
+					border-radius: 4px;
+					margin-right: 2rem;
+				}
+			}
+			&-panel {
+				display: flex;
+				align-items: center;
+				&__btn {
+					background-color: $yellow;
+					border-color: $yellow;
+					color: #000;
+					font-weight: 600;
+					margin-right: 1.6rem;
+				}
+				&__conf {
+					max-width: 42rem;
+					a {
+						color: #77BEFF;
+					}
+				}
+			}
+			
+
+		}
+		
+	}
+}
+.office {
+	padding: 6.4rem 0 10.8rem 0;
+	&__title {
+		text-align: center;
+		font-weight: 400;
+		margin-bottom: 6.4rem;
+		span {
+			font-weight: 600;
+		}
+	}
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&__item {
+			width: 61rem;
+			height: 37.6rem;
+			// margin-right: 3rem;
+			margin-bottom: 3.2rem;
+			border-radius: 4px;
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.contacts {
+	font-size: 1.8rem;
+	padding: 11.6rem 0 6.4rem 0;
+	.container {
+		justify-content: space-between;
+	}
+	&-block {
+		&__icon {
+			margin-right: 3rem;
+		}
+		&.links {
+			.contacts-block__text {
+				padding-left: 2rem;
+			}
+		}
+		&-list {
+			svg, img {
+				width: 8rem;
+				height: 8rem;
+				margin-right: 3rem;
+				&:last-child {
+					margin-right: 0
+				}
+			}
+			&__item {
+				margin-bottom: 3.2rem;
+				span {
+					font-weight: 600;
+				}
+				&__icon {
+
+					margin-right: 3rem;
+				}
+				&__content {
+					a {
+						color: $blue;
+						font-weight: 600;
+						margin-bottom: .5rem;
+					}
+				}
+			}
+		}
+	}
+	&-row {
+		width: 67%;
+		justify-content: space-between;
+	}
+}
+
+.footer {
+	.container {
+		justify-content: space-between;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+	&__politika {
+		color: $blue;
+		font-weight: 600;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.popup {
+
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	&.hidden {
+		display: none;
+	}
+	&-body {
+		&.video {
+			width: 100rem;
+		}
+		&-header {
+			position: relative;
+			&__close {
+				position: absolute;
+				right: -3.5rem;
+				top: -3.5rem;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+		&-content {
+			width: 100%;
+			&__video {
+				width: 100%;
+			}
+			&__image {
+				width: 60rem;
+				max-width: 100%;
+			}
 		}
 	}
 }

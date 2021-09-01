@@ -4,18 +4,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Центурион</title>
+	<link rel="stylesheet" href="css/customreceptionblock.css">
+	<link rel="stylesheet" href="css/calendar.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.css">
+
 	<link rel="stylesheet" href="css/styles.min.css">
 	<link rel="stylesheet" href="css/range.css">
+
 	<link rel="stylesheet" href="css/dolgs.css">
 	<link rel="stylesheet" href="css/index.css">
-
+	<link rel="stylesheet" href="css/media_index.css">
 	<!-- Шрифт Inter -->
 	<link rel="stylesheet" href="static/fonts/inter/stylesheet.css">
 </head>
 <body>
 	<header class="header">
 		<div class="container row a-center">
-			<svg width="22.5rem" height="6.0rem" viewBox="0 0 225 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg class="header__logo" width="22.5rem" height="6.0rem" viewBox="0 0 225 60" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M4.5016 10.523L2.56931 11.4602C1.74119 25.4747 4.16186 35.549 7.72917 42.7693C8.04768 41.8109 8.42989 40.9163 8.91827 40.1283C5.98798 33.6961 4.07692 24.921 4.79888 12.9937L6.73117 12.0565C6.73117 12.0352 6.70994 12.0352 6.70994 12.0139C6.17909 11.375 5.09616 10.7573 4.5016 10.523ZM42.744 40.8311C36.5437 53.9725 26.1603 56.7626 26.1603 56.7626C26.1603 56.7626 23.6971 56.1023 20.4696 53.9724C18.9832 54.2067 17.5393 54.228 16.7536 54.3132C21.7436 58.5091 26.2877 60 26.2877 60C26.2877 60 37.4143 56.9969 44.3153 43.0888C43.7845 42.2581 43.2749 41.4914 42.744 40.8311ZM49.5176 11.4602L43.466 8.49966C44.0393 9.4581 44.5064 10.523 44.8037 11.6306C44.9523 11.7797 45.101 11.9288 45.2496 12.0991L47.097 13.015C47.1394 13.5688 47.1607 14.1225 47.1819 14.655C48.1587 16.2098 48.9868 18.0415 49.6238 20.0649C49.7088 17.3599 49.6875 14.5059 49.5176 11.4602ZM29.7488 33.1849C29.2392 32.4394 27.8165 32.2903 27.0096 33.0145C26.3301 33.6109 26.1603 34.6545 26.6699 35.4426L26.9035 35.6981C26.6911 35.2083 26.4788 34.974 26.5849 34.2924C26.6699 33.8026 26.9247 33.4405 27.2007 33.2062C27.859 32.6524 28.772 32.5459 29.494 33.0145C29.6851 33.1636 29.5152 33.0997 29.7488 33.1849ZM33.5709 36.9335C33.9744 37.2529 34.3141 37.5724 34.7388 37.9132C34.3566 37.3807 33.6346 36.7418 33.6134 35.8259C33.5922 34.7823 33.9107 33.8238 33.9107 33.2701C33.6559 33.8451 33.4435 34.6758 33.2736 35.3574C33.0401 36.2945 33.0613 36.2306 31.7873 36.6779C32.5092 36.7205 33.0613 36.5501 33.5709 36.9335ZM12.2945 49.9044C12.5493 50.7137 14.9487 51.9917 15.7768 52.1408C14.609 51.3314 13.6959 49.947 14.0569 49.4145C14.6939 48.4987 16.4563 43.1101 15.5857 41.7257C15.5008 44.0046 14.9063 47.7958 12.2945 49.9044ZM18.2612 27.6472C14.3754 20.6612 21.6374 21.3002 23.1875 20.7464C22.6779 20.576 16.2652 20.8316 14.9912 24.4311C16.3289 25.3257 16.52 25.9646 18.2612 27.6472ZM7.92027 25.5599C15.0337 25.5599 18.0914 33.7813 24.5465 34.5693C25.1198 34.6758 25.0349 34.6332 25.1198 34.5267C25.0773 34.335 24.7164 34.3563 24.2067 34.2072C19.9812 32.9719 15.883 28.1584 12.4219 25.4747C13.9932 21.5558 17.0509 20.0436 20.4908 19.7241C20.7668 19.0425 20.6182 17.722 19.6839 17.3173C17.4756 17.1043 15.2035 18.0202 14.4816 18.7443C13.4623 16.9979 12.4219 15.6986 11.1691 14.229C10.7656 13.7391 10.2985 13.3345 9.91627 12.8872C10.3197 12.6529 10.8506 12.4399 11.2965 12.2695C20.2785 8.62745 34.7388 9.88408 38.476 20.2353C33.4435 4.23991 17.5817 6.39108 8.17508 11.4602C6.87981 9.94797 2.08093 8.28667 0.297275 7.94589L0.148638 7.92459L0 7.88199C0.233574 7.51992 0.976764 6.83836 1.42268 6.47628C1.61378 6.32719 3.01523 5.28355 3.03646 5.26225C3.46114 5.04926 3.80088 4.79368 4.22556 4.53809C6.79487 3.06848 10.3834 1.36458 13.25 0.789516L15.3522 4.72978L14.6939 0.55523C23.4848 -0.999578 35.482 0.278346 41.5974 10.0119C41.0665 10.736 41.1515 10.7786 40.7905 11.7371C42.5317 12.7381 43.0625 13.015 44.3578 14.0799L40.4932 16.1246L40.3233 16.2098L45.7592 15.656C47.5641 19.9158 50.1547 23.707 48.9443 33.2062L46.3113 33.4831C48.4135 34.6119 48.6683 34.6971 48.8806 35.6129C49.1142 36.5714 48.4559 38.8291 47.5429 41.321C46.2264 37.3594 43.0413 33.3127 38.0301 31.3958C39.474 29.0103 35.0785 18.5953 30.5982 21.5558C36.0978 26.4758 35.6731 30.1392 34.4628 36.1028C34.9087 37.2742 39.1979 39.9579 39.7712 40.7246C39.3253 41.8109 36.3738 46.5605 35.5032 47.5402L30.1947 37.2742C31.9784 35.975 32.127 33.0997 30.1947 31.6727C28.1775 30.1605 25.5657 31.8431 25.4171 33.6961L25.5232 33.547C25.5657 33.4831 25.5657 33.4618 25.6082 33.3979C27.2007 30.3096 30.4495 31.4597 30.9591 33.7174C31.2352 34.9953 31.0228 36.4649 29.3241 37.3594C27.7316 38.1901 26.4151 37.5511 25.8205 37.8919C23.3574 39.3615 23.2937 42.9823 25.5657 45.3678C22.6779 54.0576 14.1631 55.1013 8.57853 48.9459C11.0417 48.2857 13.2925 48.3709 14.4179 40.895C14.5028 40.32 14.6939 39.7662 15.1398 39.2976C16.3289 38.0836 17.3057 37.402 18.6647 36.401L18.5797 34.3137L14.1843 36.0176L13.5473 38.1901L11.6575 36.5075L7.92027 25.5599ZM18.2612 36.2732L14.524 39.3828L16.8173 36.0176L16.5413 35.5703L18.1763 34.9101L18.2612 36.2732Z" fill="#04194F"/>
 				<path d="M102.094 28.2887V10.9455H108.747V17.6053H110.734V10.9455H117.386V25.6063C117.386 26.6238 117.479 27.6412 117.571 28.2887H111.889C110.918 28.2887 110.734 27.1325 110.734 23.9414V21.6289H108.747V28.2887H102.094Z" fill="#04194F"/>
 				<path d="M118.403 15.6166V10.9455H133.741V15.6166H129.398V28.2887H122.745V15.6166H118.403Z" fill="#04194F"/>
@@ -50,11 +56,11 @@
 				<div class="header-address__item">
 					г. Самара,<br> 
 					ул. Ново-Садовая, 347А</div>
-				<div class="header-address__item">
+				<div class="header-address__item sizran">
 					г. Сызрань, <br>
 					ул. 50 лет октября, 28А
 				</div>
-				<div class="header-address__item">
+				<div class="header-address__item tolyatti">
 					г. Тольятти,<br>
 					ул. Ворошилова, 69
 				</div>
@@ -66,12 +72,20 @@
 				<div class="header-panel__btn btn a-center">
 					Обратная связь
 				</div>
+				<svg class="header-panel__rigthbtn" width="3.2rem" height="2.2rem" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="31" y1="1" x2="1" y2="0.999997" stroke="#0227AB" stroke-width="2" stroke-linecap="round"/>
+					<line x1="31" y1="11" x2="1" y2="11" stroke="#0227AB" stroke-width="2" stroke-linecap="round"/>
+					<line x1="31" y1="21" x2="1" y2="21" stroke="#0227AB" stroke-width="2" stroke-linecap="round"/>
+				</svg>
 			</div>
 		</div>
 	</header>
 	<div class="nav">
 		<div class="container">
-			<div class="nav-list row a-center">
+			<div class="nav-list row a-center">	
+				<svg class="nav-list__close" height="3rem" viewBox="0 0 329.26933 329" width="3rem" xmlns="http://www.w3.org/2000/svg">
+					<path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" fill="#ffffff"/>
+				</svg>
 				<div class="nav-list__item">
 					Процесс работы
 				</div>
@@ -162,7 +176,8 @@
 					</div>
 				</div>
 			</div>
-			<img class="main__image" src="static/images/serega.png">
+			<img class="main__image w1920" src="static/images/serega.png">
+			<img class="main__image w1200" src="static/images/serega1200.png">
 			
 		</div>
 	</section>
@@ -200,11 +215,9 @@
 			</div>
 		</div>
 	</section>
-	<section class="dolgs">
+	<div style="display:none;" class="dolgs-start">Поехали</div>
+	<div class="dolgs">
 		<div class="container">
-			<div class="dolg__title title">
-				Полностью избавиться от долгов <br>возможно от <span>6 месяцев</span>
-			</div>
 			<div class="dolgs-list row">
 				<div class="dolgs-list__item row consult">
 					<svg class="dolgs-list__item__image" width="4.7rem" height="5.6rem" viewBox="0 0 47 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,66 +228,79 @@
 					</div>
 				</div>
 
-				<div class="dolgs-list__item boxed">
+				<div class="dolgs-list__item podgotovka boxed">
 					<div class="dolgs-list__item__title">
 						<span>1</span> месяц
 					</div>
 					<div class="dolgs-list__item-content">
 						<div class="dolgs-list__item-content__text">
-							Подготовка и сбор необходимого пакета документов.<br>
-							Составляем доверенность.
+							<span>	Подготовка и сбор необходимого пакета документов.</span><br>
 						</div>
 						<div class="dolgs-list__item-content__descrp">
-							Анализ ситуации и составление плана действий
+							1. Составление доверенности.<br>
+							2. Анализ ситуации и составление     плана действий.
 						</div>
 					</div>
 					
 				</div>
 
-				<div class="dolgs-list__item boxed">
+				<div class="dolgs-list__item zayavl boxed">
 					<div class="dolgs-list__item__title">
 						<span>2</span> месяц
 					</div>
 					<div class="dolgs-list__item-content">
 						<div class="dolgs-list__item-content__text">
-							Подготовка искового заявления. Присвоение номера дела по банкротству.
+							<span>	Подготовка искового заявления.</span> <br><br>Присвоение номера дела по банкротству.<br>
 						</div>
 						<div class="dolgs-list__item-content__descrp">
 							Необходимо личное присутствие банкрота при подписании иска.
 						</div>
 					</div>
-					
+					<div class="dolgs-list__item__line">
+						
+					</div>
 				</div>
 
-				<div class="dolgs-list__item boxed">
+				<div class="dolgs-list__item zasedanie boxed">
 					<div class="dolgs-list__item__title">
 						<span>3</span> месяц
 					</div>
 					<div class="dolgs-list__item-content">
 						<div class="dolgs-list__item-content__text">
-							Первое заседание. Судьей рассматривается процесс признания гражданина банкротом.
+							<span>	Первое заседание</span><br><br>
+							Судьей рассматривается процесс признания гражданина банкротом. 
 						</div>
 						<div class="dolgs-list__item-content__descrp">
-							Без участия лица при наличии доверенности
+							
 						</div>
 					</div>
-					
+					<div class="dolgs-list__item__dot">
+						
+					</div>
 				</div>
 
-				<div class="dolgs-list__item boxed">
-					
+				<div class="dolgs-list__item reshenie ">
+					<img src="static/icons/dolgs/left.svg" alt="">
+					<div class="text">
+						Выносится решение о признании гражданина банкротом 
+					</div>
+					<img src="static/icons/dolgs/right.svg" alt="">
+					<div class="dolgs-list__item__dot">
+						
+					</div>
 				</div>
 
-				<div class="dolgs-list__item boxed">
+				<div class="dolgs-list__item finish boxed">
 					<div class="dolgs-list__item__title">
 						<span>4</span> месяц
 					</div>
 					<div class="dolgs-list__item-content">
 						<div class="dolgs-list__item-content__text">
-						Реализация имущества и обоснование заработной платы
-						</div>
+						<span>	Завершение процедуры</span>
+						</div><br><br>
+						Судом определяется один из трех способов погашения долговых обязательств: реструктузация, списание долгов, мировое соглашение
 						<div class="dolgs-list__item-content__descrp">
-							Завершение процедуры
+							
 						</div>
 					</div>
 					
@@ -283,7 +309,7 @@
 
 			</div>
 		</div>
-	</section>
+	</div>
 	<section class="banner">
 		<div class="banner-body">
 			<div class="banner-body__title subtitle">
@@ -376,13 +402,13 @@
 				<div class="dogovor-panel__text">
 					Мы составили договор <span class="underline black">в пользу клиента</span>, прописав все необходимые гарантии
 				</div>
-				<div class="dogovor-panel__btn btn download a-center">
+				<a href="static/images/dogovor/example.docx" download="" class="dogovor-panel__btn btn download a-center">
 					Скачать договор
 					<svg width="2.4rem" height="2.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M19 9H15V3H9V9H5L12 17L19 9ZM4 19H20V21H4V19Z" fill="#0227AB"/>
 					</svg>
 
-				</div>
+				</a>
 			</div>
 
 			<div class="dogovor-screen">
@@ -676,7 +702,7 @@
 			</div>
 			<div class="calculation-info">
 				<div class="calculation-info__title title">
-					Оплатить услугу можно в рассрочку на <span>6 месяцев</span>
+					Оплатить услугу можно в&nbsp;рассрочку на <span>6 месяцев</span>
 				</div>
 				<div class="calculation-info-content">
 					<div style="display: none;" class="calculation-info-content-price">
@@ -705,7 +731,80 @@
 			<div class="results__title title">
 				Результаты нашей работы<br> подкреплены <span>оценками клиентов</span>
 			</div>
-			<div class="results-list">
+			<div class="results-list row">
+				<div class="results-list__item elena" data-value="cherepanov_aleksandr">
+					<svg class="results-list__item__play" width="2.4rem" height="2.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 4V20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+
+					<img src="static/images/results/cherepanov_aleksandr/avatar.png" alt="">
+					<div class="results-list__item-descrp">
+						<div class="results-list__item-descrp__name">
+							Черепанов Александр
+						</div>
+						<div class="results-list__item-descrp__numb">
+							Списано: 260 000 ₽
+						</div>
+					</div>
+				</div>
+
+
+				<div class="results-list__item elena" data-value="kucherov_aleksey">
+					<svg class="results-list__item__play" width="2.4rem" height="2.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 4V20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+
+					<img src="static/images/results/kucherov_aleksey/avatar.png" alt="">
+					<div class="results-list__item-descrp">
+						<div class="results-list__item-descrp__name">
+							Кучеров Алексей
+						</div>
+						<div class="results-list__item-descrp__numb">
+							Списано: 2 200 000 ₽
+						</div>
+					</div>
+				</div>
+
+				<div class="results-list__item elena" data-value="irina">
+					<svg class="results-list__item__play" width="2.4rem" height="2.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 4V20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+
+					<img src="static/images/results/valentina_morozova/avatar.png" alt="">
+					<div class="results-list__item-descrp">
+						<div class="results-list__item-descrp__name">
+							Валентина Морозова
+						</div>
+						<div class="results-list__item-descrp__numb">
+							Списано: 680 000 ₽
+						</div>
+					</div>
+				</div>
+
+				<div class="results-list__item elena" data-value="tetya">
+					<svg class="results-list__item__play" width="2.4rem" height="2.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 4V20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+
+					<img src="static/images/results/grigoriy_vorobiew/avatar.png" alt="">
+					<div class="results-list__item-descrp">
+						<div class="results-list__item-descrp__name">
+							Григорий Воробьев
+						</div>
+						<div class="results-list__item-descrp__numb">
+							Списано: 1 340 000 ₽
+						</div>
+					</div>
+				</div>
+
 				<div class="results-list__item elena">
 					<svg class="results-list__item__play" width="2.4rem" height="2.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M6 4V20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -713,13 +812,67 @@
 						<path d="M20 12L6 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
 
-					<img src="static/images/results/elena/people1.png" alt="">
+					<img src="static/images/results/ekaterina_safronova/avatar.png" alt="">
 					<div class="results-list__item-descrp">
 						<div class="results-list__item-descrp__name">
-							Елена Михайлова
+							Екатерина Сафронова
 						</div>
 						<div class="results-list__item-descrp__numb">
-							Списано: 260 000 ₽
+							Списано: 580 000 ₽
+						</div>
+					</div>
+				</div>
+
+				<div class="results-list__item elena">
+					<svg class="results-list__item__play" width="2.4rem" height="2.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 4V20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+
+					<img src="static/images/results/boris_korosh/avatar.png" alt="">
+					<div class="results-list__item-descrp">
+						<div class="results-list__item-descrp__name">
+							Борис Корош
+						</div>
+						<div class="results-list__item-descrp__numb">
+							Списано: 1 000 000 ₽
+						</div>
+					</div>
+				</div>
+
+				<div class="results-list__item elena">
+					<svg class="results-list__item__play" width="2.4rem" height="2.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 4V20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+
+					<img src="static/images/results/yulia_lursaeva/avatar.png" alt="">
+					<div class="results-list__item-descrp">
+						<div class="results-list__item-descrp__name">
+							Юлия Лурсаева
+						</div>
+						<div class="results-list__item-descrp__numb">
+							Списано: 367 000 ₽
+						</div>
+					</div>
+				</div>
+
+				<div class="results-list__item elena">
+					<svg class="results-list__item__play" width="2.4rem" height="2.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 4V20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M20 12L6 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+
+					<img src="static/images/results/elena_menzhikova/avatar.png" alt="">
+					<div class="results-list__item-descrp">
+						<div class="results-list__item-descrp__name">
+							Елена Меньшикова
+						</div>
+						<div class="results-list__item-descrp__numb">
+							Списано: 1 200 000 ₽
 						</div>
 					</div>
 				</div>
@@ -746,7 +899,7 @@
 			</div>
 			<div class="collective-list">
 				<div class="collective-list__item">
-					<img src="static/images/collective/sergey/avatar.png" alt="">
+					<img src="static/images/collective/sergey_abakumov/avatar.png" alt="">
 					<div class="collective-list__item__time btn yellow-btn">
 						Основатель компании
 					</div>
@@ -762,48 +915,99 @@
 						</div>
 					</div>
 				</div>
+				<div class="collective-list__item">
+					<img src="static/images/collective/makarov_andrey/avatar.png" alt="">
+					<div class="collective-list__item__time btn">
+						Работает с 2015 года
+					</div>
+					<div class="collective-list__item-content">
+						<div class="collective-list__item-content__name">
+							Макаров Андрей Николаевич
+						</div>
+						<div class="collective-list__item-content__status">
+							Технический директор
+						</div>
+						<div class="collective-list__item-content__cases">
+							Завершено 123 дела
+						</div>
+					</div>
+				</div>
+				<div class="collective-list__item">
+					<img src="static/images/collective/morozova_olga/avatar.png" alt="">
+					<div class="collective-list__item__time btn">
+						Работает с 2015 года
+					</div>
+					<div class="collective-list__item-content">
+						<div class="collective-list__item-content__name">
+							Морозова Ольга Станиславовна
+						</div>
+						<div class="collective-list__item-content__status">
+							Начальник юридического отдела
+						</div>
+						<div class="collective-list__item-content__cases">
+							Завершено 123 дела
+						</div>
+					</div>
+				</div>
+				<div class="collective-list__item">
+					<img src="static/images/collective/repina_yulia/avatar.png" alt="">
+					<div class="collective-list__item__time btn">
+						Работает с 2015 года
+					</div>
+					<div class="collective-list__item-content">
+						<div class="collective-list__item-content__name">
+							Репина Юлия Юрьевна
+						</div>
+						<div class="collective-list__item-content__status">
+							Руководитель филиала г. Тольятти
+						</div>
+						<div class="collective-list__item-content__cases">
+							Завершено 123 дела
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="collective-cases">
 				<div class="collective-cases__title subtitle">
 					Мы завершили уже <span class="underline black">более 13 000 дел</span>
 				</div>
 				<div class="collective-cases-list row">
-					<div class="collective-cases-list__item">
+					<div class="collective-cases-list__item" data-value="case1">
 						<img class="collective-cases-list__item__preview" src="static/images/collective/cases/case1.png" alt="">
 						<div class="collective-cases-list__item__text">
 							Дело №123
 						</div>
 					</div>
 
-					<div class="collective-cases-list__item">
+					<div class="collective-cases-list__item" data-value="case2">
 						<img class="collective-cases-list__item__preview" src="static/images/collective/cases/case2.png" alt="">
 						<div class="collective-cases-list__item__text">
 							Дело №123
 						</div>
 					</div>
 
-					<div class="collective-cases-list__item">
+					<div class="collective-cases-list__item" data-value="case3">
 						<img class="collective-cases-list__item__preview" src="static/images/collective/cases/case3.png" alt="">
 						<div class="collective-cases-list__item__text">
 							Дело №123
 						</div>
 					</div>
 
-					<div class="collective-cases-list__item">
+					<div class="collective-cases-list__item" data-value="case4">
 						<img class="collective-cases-list__item__preview" src="static/images/collective/cases/case4.png" alt="">
 						<div class="collective-cases-list__item__text">
 							Дело №123
 						</div>
 					</div>
 
-					<div class="collective-cases-list__item">
+					<div class="collective-cases-list__item smallscreen" data-value="case5">
 						<img class="collective-cases-list__item__preview" src="static/images/collective/cases/case5.png" alt="">
 						<div class="collective-cases-list__item__text">
 							Дело №123
 						</div>
 					</div>
 
-					<div class="collective-cases-list__item">
+					<div class="collective-cases-list__item smallscreen" data-value="case6">
 						<img class="collective-cases-list__item__preview" src="static/images/collective/cases/case6.png" alt="">
 						<div class="collective-cases-list__item__text">
 							Дело №123
@@ -884,7 +1088,241 @@
 			
 		</div>
 	</section>
+	<section class="receptconsult">
+		<div class="container">
+			<div class="receptconsult-banner">
+				<div class="receptconsult-banner__title subtitle">
+					Остались вопросы?<br> Консультация бесплатно
+				</div>
+				<div class="receptconsult-banner__text">
+					Заполните форму и мы с вами свяжемся
+				</div>
+				<form action="#" class="receptconsult-banner-form">
+					<div class="receptconsult-banner-form-inputs">
+						<input type="text" placeholder="Имя" class="receptconsult-banner-form-inputs__item">
+						<input type="phone" placeholder=" Телефон" class="receptconsult-banner-form-inputs__item">
+					</div>
+					<div class="receptconsult-banner-form-panel">
+						<div class="receptconsult-banner-form-panel__btn btn">
+							Отправить заявку
+						</div>
+						<div class="receptconsult-banner-form-panel__conf">
+							Нажимая кнопку “Отправить заявку”, Вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="office">
+		<div class="container">
+			<div class="office__title title">
+				<span>Приходите к нам</span> в офис
+			</div>
+			<div class="office-list">
+				<img src="static/images/office/1.png" class="office-list__item">
+
+				<img src="static/images/office/2.png" class="office-list__item">
+
+				<img src="static/images/office/3.png" class="office-list__item">
+
+				<img src="static/images/office/4.png" class="office-list__item">
+			</div>
+		</div>
+	</section>
+	<section class="reception">
+		<div class="container">
+			<form action="#" class="calendar">
+				<div class="calendar__title subtitle">
+					Есть возможность <span>записаться в офис</span> онлайн
+				</div>
+				<div class="calendar-month">
+					<div class="calendar-month__title">
+						Выберите день: <input type="text" id="datepicker" class="datapicker-button" readonly="">
+					</div>
+				</div>
+
+
+				<div class="calendar-gallery">
+					<!-- <div class="calendar-gallery__item">
+						<div class="calendar-gallery__item__day">
+							13
+						</div>
+						<div class="calendar-gallery__item__month">
+							Понедельник
+						</div>
+					</div> -->
+				</div>
+
+				<div class="calendar-time">
+					<div class="calendar-time__title">
+						Выберите время:
+					</div>
+					<div class="calendar-time-list">
+						<div class="calendar-time-list__item enabled" data-value="10:00">
+							10:00
+						</div>
+						<div class="calendar-time-list__item enabled" data-value="12:00">
+							12:00
+						</div>
+						<div class="calendar-time-list__item enabled" data-value="14:00">
+							14:00
+						</div>
+						<div class="calendar-time-list__item enabled" data-value="16:00">
+							16:00
+						</div>
+
+					</div>
+				</div>
+				<div class="calendar-feedback">	
+					<div class="calendar-feedback__title">	
+						Как нам с Вами связаться?
+					</div>	
+					<div class="calendar-feedback-inputs row">	
+						<div class="calendar-feedback-inputs-forms row">	
+							<input type="text" placeholder="Имя" class="calendar-feedback-inputs-forms__input">
+							<input type="text" placeholder="Номер телефона" class="calendar-feedback-inputs-forms__input">
+						</div>
+						
+
+						<div class="calendar-feedback__btn btn">	
+							Записаться в офис
+						</div>
+					</div>	
+				</div>	
+			</form>
+		</div>
+	</section>
+	<section class="contacts">
+		<div class="container row">
+			<div class="contacts-block row">
+				<svg class="contacts-block__icon" width="8rem" height="8rem" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="80" height="80" rx="40" fill="#F6FBFE"/>
+					<path d="M40 26.666C34.1187 26.666 29.3334 31.4513 29.3334 37.326C29.2947 45.9193 39.5947 53.0447 40 53.3327C40 53.3327 50.7054 45.9193 50.6667 37.3327C50.6667 31.4513 45.8814 26.666 40 26.666ZM40 42.666C37.0534 42.666 34.6667 40.2793 34.6667 37.3327C34.6667 34.386 37.0534 31.9993 40 31.9993C42.9467 31.9993 45.3334 34.386 45.3334 37.3327C45.3334 40.2793 42.9467 42.666 40 42.666Z" fill="#0227AB"/>
+				</svg>
+				<div class="contacts-block-list col">
+					<div class="contacts-block-list__item">
+						<span>г. Самара,</span> <br>
+						ул. Ново-садовая, 347А
+					</div>
+					<div class="contacts-block-list__item">
+						<span>г. Тольятти,</span> <br>
+						ул. Ворошилова, 69
+					</div>
+					<div class="contacts-block-list__item">
+						<span>г. Сызрань,</span> <br>
+						ул. 50 лет октября, 28А
+					</div>
+				</div>
+			</div>
+
+			<div class="contacts-row row">
+				<div class="contacts-block row">
+				
+					<div class="contacts-block-list col">
+						<div class="contacts-block-list__item row a-center">
+
+							<svg class="contacts-block-list__item__icon" width="8rem" height="8rem" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="80" height="80" rx="40" fill="#F6FBFE"/>
+								<path d="M44.33 45.48L46.57 43.24C46.8717 42.9421 47.2534 42.7381 47.6688 42.6529C48.0842 42.5677 48.5154 42.6049 48.91 42.76L51.64 43.85C52.0388 44.0119 52.3808 44.2882 52.6228 44.6441C52.8648 45.0001 52.9961 45.4197 53 45.85V50.85C52.9977 51.1428 52.9361 51.4321 52.8191 51.7005C52.702 51.9688 52.5318 52.2107 52.3188 52.4116C52.1058 52.6125 51.8543 52.7682 51.5796 52.8693C51.3048 52.9704 51.0124 53.0149 50.72 53C31.59 51.81 27.73 35.61 27 29.41C26.9661 29.1056 26.9971 28.7974 27.0908 28.5058C27.1846 28.2141 27.3391 27.9456 27.5441 27.718C27.749 27.4903 27.9999 27.3086 28.2802 27.1849C28.5604 27.0612 28.8637 26.9982 29.17 27H34C34.431 27.0013 34.8518 27.1315 35.2082 27.3739C35.5646 27.6162 35.8404 27.9597 36 28.36L37.09 31.09C37.2502 31.4831 37.2911 31.9147 37.2075 32.3309C37.124 32.747 36.9196 33.1293 36.62 33.43L34.38 35.67C34.38 35.67 35.67 44.4 44.33 45.48Z" fill="#0227AB"/>
+							</svg>
+
+
+							<div class="contacts-block-list__item__content col">
+								<a href="tel:+7 846 272-32-56">+7 846 272-32-56 </a>
+								Работаем с 9:00 до 18:00
+							</div>
+
+						</div>
+
+						<div class="contacts-block-list__item row a-center">
+
+							<svg class="contacts-block-list__item__icon" width="8rem" height="8rem" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="80" height="80" rx="40" fill="#F6FBFE"/>
+								<path d="M53 29H27C26.4469 29 26 29.4469 26 30V50C26 50.5531 26.4469 51 27 51H53C53.5531 51 54 50.5531 54 50V30C54 29.4469 53.5531 29 53 29ZM50.475 32.4031L40.6156 40.075C40.3719 40.2656 40.0312 40.2656 39.7875 40.075L29.925 32.4031C29.8878 32.3744 29.8606 32.3348 29.847 32.2899C29.8335 32.2449 29.8344 32.1968 29.8495 32.1524C29.8647 32.1079 29.8934 32.0693 29.9316 32.042C29.9698 32.0147 30.0155 32 30.0625 32H50.3375C50.3845 32 50.4303 32.0147 50.4684 32.042C50.5066 32.0693 50.5353 32.1079 50.5505 32.1524C50.5656 32.1968 50.5665 32.2449 50.553 32.2899C50.5394 32.3348 50.5122 32.3744 50.475 32.4031Z" fill="#0227AB"/>
+							</svg>
+
+
+							<div class="contacts-block-list__item__content col">
+								<a href="mailto:gm@centurionpro.ru">gm@centurionpro.ru </a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="contacts-block links col">
+					<div class="contacts-block-list row">
+						<svg class="contacts-block-list__item" width="8rem" height="8rem" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="80" height="80" rx="40" fill="#F6FBFE"/>
+							<path d="M41.8627 51.9962V41.0682H45.5493L46.0973 36.7896H41.8627V34.0642C41.8627 32.8296 42.2067 31.9842 43.9787 31.9842H46.224V28.1696C45.1315 28.0525 44.0334 27.9959 42.9347 28.0002C39.676 28.0002 37.4387 29.9896 37.4387 33.6416V36.7816H33.776V41.0602H37.4467V51.9962H41.8627Z" fill="black"/>
+						</svg>
+
+
+						<svg class="contacts-block-list__item" width="8rem" height="8rem" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="80" height="80" rx="40" fill="#F6FBFE"/>
+							<path d="M39.9999 35.8337C37.7062 35.8337 35.8343 37.7056 35.8343 39.9994C35.8343 42.2931 37.7062 44.165 39.9999 44.165C42.2937 44.165 44.1655 42.2931 44.1655 39.9994C44.1655 37.7056 42.2937 35.8337 39.9999 35.8337ZM52.4937 39.9994C52.4937 38.2744 52.5093 36.565 52.4124 34.8431C52.3155 32.8431 51.8593 31.0681 50.3968 29.6056C48.9312 28.14 47.1593 27.6869 45.1593 27.59C43.4343 27.4931 41.7249 27.5087 40.003 27.5087C38.278 27.5087 36.5687 27.4931 34.8468 27.59C32.8468 27.6869 31.0718 28.1431 29.6093 29.6056C28.1437 31.0712 27.6905 32.8431 27.5937 34.8431C27.4968 36.5681 27.5124 38.2775 27.5124 39.9994C27.5124 41.7212 27.4968 43.4337 27.5937 45.1556C27.6905 47.1556 28.1468 48.9306 29.6093 50.3931C31.0749 51.8587 32.8468 52.3119 34.8468 52.4087C36.5718 52.5056 38.2812 52.49 40.003 52.49C41.728 52.49 43.4374 52.5056 45.1593 52.4087C47.1593 52.3119 48.9343 51.8556 50.3968 50.3931C51.8624 48.9275 52.3155 47.1556 52.4124 45.1556C52.5124 43.4337 52.4937 41.7244 52.4937 39.9994ZM39.9999 46.4087C36.453 46.4087 33.5905 43.5462 33.5905 39.9994C33.5905 36.4525 36.453 33.59 39.9999 33.59C43.5468 33.59 46.4093 36.4525 46.4093 39.9994C46.4093 43.5462 43.5468 46.4087 39.9999 46.4087ZM46.6718 34.8244C45.8437 34.8244 45.1749 34.1556 45.1749 33.3275C45.1749 32.4994 45.8437 31.8306 46.6718 31.8306C47.4999 31.8306 48.1687 32.4994 48.1687 33.3275C48.1689 33.5241 48.1304 33.7189 48.0552 33.9006C47.9801 34.0823 47.8698 34.2474 47.7308 34.3865C47.5917 34.5255 47.4266 34.6358 47.2449 34.7109C47.0632 34.7861 46.8684 34.8246 46.6718 34.8244Z" fill="black"/>
+						</svg>
+
+						<img class="contacts-block-list__item" src="static/icons/contacts/vk.svg" alt="">
+
+
+
+						<svg class="contacts-block-list__item" width="8rem" height="8rem" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="80" height="80" rx="40" fill="#F6FBFE"/>
+							<path d="M40 27.6797C24.2752 27.6797 24 29.0781 24 39.9997C24 50.9213 24.2752 52.3197 40 52.3197C55.7248 52.3197 56 50.9213 56 39.9997C56 29.0781 55.7248 27.6797 40 27.6797ZM45.128 40.5341L37.944 43.8877C37.3152 44.1789 36.8 43.8525 36.8 43.1581V36.8413C36.8 36.1485 37.3152 35.8205 37.944 36.1117L45.128 39.4653C45.7568 39.7597 45.7568 40.2397 45.128 40.5341Z" fill="black"/>
+						</svg>
+
+
+
+					</div>
+					<div class="contacts-block__text">
+						Горы полезных материалов <br> в наших социальных сетях!
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="map" style="width: 100%; height: 400px; display: none;"></div>
+	<section class="maps">	
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.0832492369195!2d50.20708121538117!3d53.252208089460076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4166191854c9909f%3A0x6cfd0cb87e70476e!2z0YPQuy4g0J3QvtCy0L4t0KHQsNC00L7QstCw0Y8sIDM0N9CQLCDQodCw0LzQsNGA0LAsINCh0LDQvNCw0YDRgdC60LDRjyDQvtCx0LsuLCA0NDMxMjU!5e0!3m2!1sru!2sru!4v1630331425236!5m2!1sru!2sru" width="100%" height="680" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</section>
+	<footer class="footer">
+		<div class="container row">
+			<div class="footer__copyright">
+				©  2021  |  Юридическая компания «Центурион»
+Политика обработки персональных данных
+			</div>
+			<div class="footer__politika">
+				<a href="#">Политика обработки персональных данных</a>
+			</div>
+		</div>
+	</footer>
+	<div class="popup hidden">
+		<div class="popup-body">
+			<div class="popup-body-header">
+				<svg class="popup-body-header__close" height="3rem" viewBox="0 0 329.26933 329" width="3rem" xmlns="http://www.w3.org/2000/svg">
+					<path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" fill="#ffffff"/>
+				</svg>
+			</div>
+			<div class="popup-body-content">
+				<video style="display:none" class="popup-body-content__video" src="static/videos/kucherov_aleksey.mp4" controls="controls"></video>
+				<img src="" class="popup-body-content__image" alt="">
+			</div>
+		</div>
+	</div>
+	<script defer src="https://api-maps.yandex.ru/2.1/?apikey=bf49e027-c88c-44bd-930d-82d665517c93&lang=ru_RU" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 	<script src="js/rangeslider-js.min.js"></script>
 	<script src="js/range.js"></script>
+
+	
+
+	<script src="js/newcalendar.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/dolgs.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
