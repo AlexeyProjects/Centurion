@@ -128,6 +128,7 @@ span {
 		&__item {
 			color: $blue;
 			font-weight: 500;
+			text-decoration: none;
 		}
 		&__close {
 			display: none;
@@ -190,6 +191,9 @@ span {
 		bottom: 0;
 		width: 57%;
 		&.w1200 {
+			display: none;
+		}
+		&.w768 {
 			display: none;
 		}
 	}
@@ -433,12 +437,26 @@ span {
 	}
 	&-list {
 		&__item {
+			position: relative;
 			padding: 3.2rem 5.2rem 3.2rem 3.2rem ;
 			border: 1px solid #EAEFF9;
 			box-shadow: 0px 4px 30px rgba(120, 141, 166, 0.1);
 			border-radius: 4px;
 			width: 100%;
 			justify-content: space-between;
+			align-items: flex-start;
+			&-header {
+				&__icon {
+					margin-top: 5rem;
+					width: 4.8rem;
+					// position: absolute;
+					right: 3rem;
+					top: 3rem;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
 			&-content {
 				&__title {
 					font-weight: 600;
@@ -450,19 +468,28 @@ span {
 					margin-bottom: 2rem;
 					&__text {
 						font-size: 1.8rem;
+						padding-bottom: 2rem;
+						border-bottom: .1rem solid #EAEFF9;
 					}
-					&__icon {
-						width: 4.8rem;
-						&:hover {
-							cursor: pointer;
-						}
-					}
+					
 				}
 				&-droper {
-					height: .1rem;
-					width: 56rem;
-					border-bottom: .1rem solid #EAEFF9;
+					display: none;
+					
+					
 					margin-bottom: 1rem;
+					border-bottom: .1rem solid #EAEFF9;
+					padding-bottom: 2rem;
+					&-item {
+						margin-bottom: 2.4rem;
+						&__descrp {
+							width: 50rem;
+							margin-right: 2rem;
+						}
+						&__price {
+							color: $blue;
+						}
+					}
 				}
 				&-price {
 					font-size: 2.4rem;

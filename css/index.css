@@ -143,6 +143,7 @@ span.underline.black {
 .nav-list__item {
   color: #0227AB;
   font-weight: 500;
+  text-decoration: none;
 }
 .nav-list__close {
   display: none;
@@ -201,6 +202,9 @@ span.underline.black {
   width: 57%;
 }
 .main__image.w1200 {
+  display: none;
+}
+.main__image.w768 {
   display: none;
 }
 
@@ -455,6 +459,7 @@ span.underline.black {
   margin-bottom: 6.4rem;
 }
 .expenses-list__item {
+  position: relative;
   padding: 3.2rem 5.2rem 3.2rem 3.2rem;
   border: 1px solid #EAEFF9;
   -webkit-box-shadow: 0px 4px 30px rgba(120, 141, 166, 0.1);
@@ -464,6 +469,18 @@ span.underline.black {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.expenses-list__item-header__icon {
+  margin-top: 5rem;
+  width: 4.8rem;
+  right: 3rem;
+  top: 3rem;
+}
+.expenses-list__item-header__icon:hover {
+  cursor: pointer;
 }
 .expenses-list__item-content__title {
   font-weight: 600;
@@ -475,18 +492,24 @@ span.underline.black {
 }
 .expenses-list__item-content-header__text {
   font-size: 1.8rem;
-}
-.expenses-list__item-content-header__icon {
-  width: 4.8rem;
-}
-.expenses-list__item-content-header__icon:hover {
-  cursor: pointer;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid #EAEFF9;
 }
 .expenses-list__item-content-droper {
-  height: 0.1rem;
-  width: 56rem;
-  border-bottom: 0.1rem solid #EAEFF9;
+  display: none;
   margin-bottom: 1rem;
+  border-bottom: 0.1rem solid #EAEFF9;
+  padding-bottom: 2rem;
+}
+.expenses-list__item-content-droper-item {
+  margin-bottom: 2.4rem;
+}
+.expenses-list__item-content-droper-item__descrp {
+  width: 50rem;
+  margin-right: 2rem;
+}
+.expenses-list__item-content-droper-item__price {
+  color: #0227AB;
 }
 .expenses-list__item-content-price {
   font-size: 2.4rem;

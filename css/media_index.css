@@ -148,7 +148,7 @@
 		display: none;
 	}
 	.dolgs-list__item.zasedanie::before {
-		left: 50%;
+		left: 50.5%;
 		width: 0.2rem;
 		height: 0;
 		top: 100%;
@@ -169,7 +169,7 @@
 	.dolgs-list__item.reshenie::before {
 		height: 0;
 		width: .2rem;
-		left: 49.7%;
+		left: 50%;
 		top: 112%;
 	}
 	.dolgs-list__item.reshenie.loaded::before {
@@ -363,6 +363,10 @@
 	html {
 		font-size: 1.9vw;
 	}
+	.btn {
+		font-size: 2rem;
+    	font-weight: 500;
+	}
 	.title {
 	    font-size: 3.4rem;
 	}
@@ -382,15 +386,19 @@
 		background-image: url('../static/images/bannersmale.png');
 		background-size: cover;
 	    width: 100%;
-    	height: 29rem;
-    	    padding: 6.6rem 6.2rem 5rem 4.2rem;
+
+    	height: 30rem;
+    	padding: 6.6rem 6.2rem 5rem 4.2rem;
+	}
+	.bannerTemp-body__title {
+
 	}
 	.bannerTemp-body__title {
 		font-weight: 400;
 	}
 	.bannerTemp-body__title, .bannerTemp-body-bottom {
 		max-width: 58rem;
-		font-size: 1.8rem;
+		font-size: 2.1rem;
 		font-weight: 400;
 	}
 	.bannerTemp {
@@ -439,7 +447,10 @@
 
 	}
 	.why-list__item {
-	    height: 29.6rem;
+	    height: 26.6rem
+	}
+	.procedure-list__item {
+		height: 21.6rem;
 	}
 	.ivan {
 		padding-bottom: 10rem;
@@ -485,11 +496,17 @@
 		margin-bottom: 1rem;
 		width: 100%;
 	}
+	.possibility-quis__btn {
+		width: 46rem;
+		font-size: 1.8rem;
+		text-align: center;
+		display: block;
+	}
 	.bannerTemp-body-bottom {
 		flex-direction: column;
 	}
 	.bannerTemp-body-bottom__text {
-		margin-bottom: 1.5rem;
+		margin-bottom: .8rem;
 	}
 	.pravo-list__item {
 		width: 46%;
@@ -585,6 +602,13 @@
 	}
 	.calendar-feedback-inputs-forms__input {
 		margin-bottom: 1.5rem;
+		width: 100%;
+	}
+	.results-list__item:nth-child(1n) {
+		margin-right: 3rem;
+	}
+	.results-list__item:nth-child(6n) {
+		margin-right: 0rem;
 	}
 	.contacts .container {
 		flex-direction: column;
@@ -621,9 +645,10 @@
 		display: none;
 	}
 	.main__image.w768 {
+		display: block;
 		width: 100%;
 		left: 50%;
-		transform: translate(-50%, 0) }
+		transform: translate(-50%, 0);
 	}
 	.collective-cases__title {
 		margin:  0 auto 4rem auto;
@@ -637,5 +662,32 @@
 	}
 	.expenses-list__item-content-droper {
 		width: 	60%;
+	}
+	.collective-list .owl-nav {
+		width: 115.5%;
+	}
+	.popup-body-header {
+		position: unset;
+
+	}
+	.popup-body-header__close {
+		right: 3rem;
+    	top: 3rem;
+	}
+	.results .container {
+		padding: 0;
+	}
+	.results__title, .result-more {
+		padding-left: 4.5rem;
+    	padding-right: 4.5rem;
+	}
+	.results__btn {
+		width: 40rem;
+	}
+	.dolgs {
+		font-size: 1.8rem;
+	}
+	.faq {
+		padding: 4.8rem 0;
 	}
 }

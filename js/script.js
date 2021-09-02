@@ -105,3 +105,11 @@ $(document).ready(function(){
     });
 });
 
+
+
+$( "#plus1month" ).click(function() {
+  $( ".expenses-list__item-content-droper" ).slideToggle( "300", function() {
+    // Animation complete.
+  });
+});
+
