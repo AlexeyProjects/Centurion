@@ -357,8 +357,14 @@
 }
 
 @media screen and ( max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
 	html {
-		font-size: 1.2vw;
+		font-size: 1.9vw;
+	}
+	.title {
+	    font-size: 3.4rem;
 	}
 	.main {
 		background-image: unset;
@@ -375,17 +381,17 @@
 	.bannerTemp-body {
 		background-image: url('../static/images/bannersmale.png');
 		background-size: cover;
-	    width: 107rem;
-	    height: 43rem;
+	    width: 100%;
+    	height: 29rem;
+    	    padding: 6.6rem 6.2rem 5rem 4.2rem;
 	}
 	.bannerTemp-body__title {
 		font-weight: 400;
 	}
-	.bannerTemp-body {
-		padding: 10.6rem 7.2rem 5rem 7.2rem;
-	}
 	.bannerTemp-body__title, .bannerTemp-body-bottom {
 		max-width: 58rem;
+		font-size: 1.8rem;
+		font-weight: 400;
 	}
 	.bannerTemp {
 		height: unset;
@@ -427,9 +433,13 @@
 		flex-wrap: wrap;
 	}
 	.procedure-list__item {
+		margin-right: 0;
 		width: 100%;
 	    background-size: 43%;
 
+	}
+	.why-list__item {
+	    height: 29.6rem;
 	}
 	.ivan {
 		padding-bottom: 10rem;
@@ -453,7 +463,6 @@
 		margin-bottom: 4rem;
 	}
 	.ivan-content-list__item__text {
-	    max-width: 37%;
 	    margin: auto;
 	}
 	.calculation .container {
@@ -462,11 +471,19 @@
 	.calculation-info__title {
 		font-size: 3.5rem;
 	}
+	.expenses-list__item-header__icon {
+		width: 6.8rem;
+		margin-left: 3rem;
+	}
 	.calculation-info {
 		flex-direction: column;
 	}
+	.expenses-list__item {
+		padding: 3.2rem;
+	}
 	.calculation-info__title {
 		margin-bottom: 1rem;
+		width: 100%;
 	}
 	.bannerTemp-body-bottom {
 		flex-direction: column;
@@ -479,7 +496,7 @@
 		margin-bottom: 2rem;
 		width: 47%;
     	margin-bottom: 4rem;
-    	font-size: 2.4rem;
+    	font-size: 1.8rem;
 	}
 	.pravo-list__item:last-child {
 		width: 100%;
@@ -517,13 +534,13 @@
 	}
 	
 	.office-list__item:nth-child(-n+4) {
-	    width: 24rem;
-    	height: 17rem;
+	    width: 14rem;
+    	height: 9rem;
     	margin-bottom: 1.2rem;
 	}
 	.office-list__item:first-child {
 	    width: 100%;
-	    height: 44.6rem;
+	    height: 26.6rem;
 	}
 	.receptconsult-bannerTemp-form-inputs {
 		flex-direction: column;
@@ -555,13 +572,13 @@
 	}
 	.calendar-time-list__item {
 		margin-bottom: 2rem;
-		width: 21rem;
+		width: 12rem;
 	}
 	.calendar-month {
 		font-size: 2.5rem;
 	}
 	.calendar-time-list__item {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 	.calendar-feedback-inputs-forms {
 		flex-direction: column;
@@ -571,7 +588,10 @@
 	}
 	.contacts .container {
 		flex-direction: column;
-		font-size: 3.4rem;
+		font-size: 1.8rem;
+	}
+	.footer {
+		text-align: center;
 	}
 	.footer .container {
 		flex-direction: column;
@@ -583,5 +603,39 @@
 	.nav-list {
 		width: 100%;
 		font-size: 3rem;
+	}
+	.header-panel {
+		display: none;
+	}
+	.main-content-icons {
+		flex-direction: row;
+		width: unset;
+	}
+	.main-content__btn {
+		margin-bottom: 2.8rem;
+	}
+	.main {
+		padding-bottom: 36rem;
+	}
+	.main__image.w1200 {
+		display: none;
+	}
+	.main__image.w768 {
+		width: 100%;
+		left: 50%;
+		transform: translate(-50%, 0) }
+	}
+	.collective-cases__title {
+		margin:  0 auto 4rem auto;
+		max-width: 85%;
+	}
+	.collective-cases-list__item {
+	    height: 15rem;
+	}
+	.calendar-feedback-inputs-forms__input {
+		font-size: 1.8rem;
+	}
+	.expenses-list__item-content-droper {
+		width: 	60%;
 	}
 }

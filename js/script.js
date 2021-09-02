@@ -89,8 +89,9 @@ $(document).ready(function(){
         margin: 100,
         responsive: {
           320: {
-            items: 2,
-            margin: 250
+            items: 1,
+            margin: 0,
+            stagePadding: 0,
           },
           768: {
             items: 2,

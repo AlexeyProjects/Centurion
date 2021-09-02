@@ -376,7 +376,8 @@ $(document).ready(function(){
         dots: false,
         responsive: {
           0: {
-            items: 3
+            items: 2,
+            margin: 40
           },
           1280: {
             items: 4
